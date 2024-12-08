@@ -1,0 +1,182 @@
+ /* Основные стили */
+ :root {
+    --spacing-base: 20px;
+    --border-radius: 5px;
+    --shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  h3,
+  h2,
+  p {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  /* MAIN */
+
+  body {
+    width: 100%;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+
+  .article {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing-base);
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+  }
+
+
+
+
+  /* TEXT */
+
+  h1 {
+    font-size: 1.5rem;
+    color: black;
+    /* или можно использовать color: gray; */
+    background: #222;
+    background-clip: text;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    color: transparent;
+    background: #222;
+    color: gray;
+    font-weight: 900;
+    /* -webkit-background-clip: text; */
+    background-clip: text;
+    font-weight: bold;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* IMAGE */
+
+  figure {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    max-width: 40%;
+  }
+
+  figure img {
+    width: 100%;
+    /* Изображение адаптируется по ширине фигуры */
+    height: auto;
+    display: block;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  }
+
+  figcaption {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    margin-top: 5px;
+  }
+
+  /* Классы для обтекания */
+  .float-left {
+    float: left;
+    margin: 0;
+    margin-right: 15px;
+
+  }
+
+  .float-right {
+    float: right;
+    margin: 0;
+    margin-left: 15px;
+  }
+
+  /* Центрированные контейнеры */
+  .center {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .center img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+
+  .img_double-container,
+  .img_triple-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    /* Изображения остаются в одной линии */
+  }
+
+  .img_double-container img {
+    flex: 1 1;
+    /* Гибкое сжатие элементов */
+    max-width: calc(100% / 2.05);
+  }
+
+  .img_triple-container img {
+    flex: 1 1 0;
+    /* Гибкое сжатие элементов */
+    max-width: calc(100% / 3.1);
+    /* Каждое изображение занимает треть ширины контейнера */
+  }
+
+  /* Адаптация для маленьких экранов */
+
+
+  .head {
+    font-size: 20px;
+  }
+
+  .table-content_title {
+    color: rgb(113, 60, 39);
+  }
+
+  .table-content_block {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+  }
+
+  .table-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    row-gap: 10px;
+  }
+
+  .table-content_name {
+    font-style: italic;
+  }
+
+  /* Утилиты */
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
