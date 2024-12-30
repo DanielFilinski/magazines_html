@@ -12,6 +12,13 @@
    margin: 0px;
  }
 
+
+ a {
+   text-decoration: none;
+   color: #0978EF;
+ }
+
+
  /* MAIN */
 
  body {
@@ -20,6 +27,7 @@
    line-height: 1.6;
    margin: 0;
    padding: 0;
+   padding-bottom: 50px;
    background-color: #f9f9f9;
  }
 
@@ -38,6 +46,7 @@
  /* TEXT */
 
  h1 {
+   font-family: 'SF Pro Display';
    font-size: 1.5rem;
    color: black;
    /* или можно использовать color: gray; */
@@ -48,6 +57,7 @@
  }
 
  h2 {
+   font-family: 'SF Pro Display';
    margin-top: 10px;
    font-size: 1.5rem;
    color: transparent;
@@ -57,6 +67,11 @@
    /* -webkit-background-clip: text; */
    background-clip: text;
    font-weight: bold;
+ }
+
+ p {
+   font-family: 'SF Pro Display';
+   font-size: 1.5rem;
  }
 
  .small-text {
@@ -85,6 +100,16 @@
 
 
 
+ img {
+   width: 100%;
+   /* Изображение адаптируется по ширине фигуры */
+   height: auto;
+   display: block;
+   border-radius: 5px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+ }
+
 
 
 
@@ -104,15 +129,7 @@
    max-width: 40%;
  }
 
- figure img {
-   width: 100%;
-   /* Изображение адаптируется по ширине фигуры */
-   height: auto;
-   display: block;
-   border-radius: 5px;
-   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
- }
 
  figcaption {
    font-size: 14px;
@@ -199,4 +216,22 @@
    content: "";
    display: table;
    clear: both;
+ }
+
+
+ /*BUTTON GO_TO_TOP*/
+
+ #scrollToTop {
+   position: fixed;
+   justify-content: center;
+   align-items: center;
+   bottom: 110px;
+   right: 30px;
+   display: none;
+   background-color: #4FA19A;
+   border: unset;
+   padding: 10px;
+   border-radius: 55px;
+   cursor: pointer;
+   z-index: 1000;
  }
